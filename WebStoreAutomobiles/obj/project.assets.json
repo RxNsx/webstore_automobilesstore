@@ -1866,11 +1866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NETDEVELOPER\\webstore_automobilesstore\\WebStoreAutomobiles\\WebStoreAutomobiles.csproj",
+      "projectUniqueName": "C:\\Users\\alpen\\Source\\Repos\\RxNsx\\webstore_automobilesstore\\WebStoreAutomobiles\\WebStoreAutomobiles.csproj",
       "projectName": "WebStoreAutomobiles",
-      "projectPath": "D:\\NETDEVELOPER\\webstore_automobilesstore\\WebStoreAutomobiles\\WebStoreAutomobiles.csproj",
+      "projectPath": "C:\\Users\\alpen\\Source\\Repos\\RxNsx\\webstore_automobilesstore\\WebStoreAutomobiles\\WebStoreAutomobiles.csproj",
       "packagesPath": "C:\\Users\\alpen\\.nuget\\packages\\",
-      "outputPath": "D:\\NETDEVELOPER\\webstore_automobilesstore\\WebStoreAutomobiles\\obj\\",
+      "outputPath": "C:\\Users\\alpen\\Source\\Repos\\RxNsx\\webstore_automobilesstore\\WebStoreAutomobiles\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alpen\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using WebStoreAutomobiles.Models;
+using WebStoreAutomobiles.Models.ViewModels;
 
 namespace WebStoreAutomobiles.Controllers;
 
@@ -8,19 +9,55 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    private readonly IStoreRepository _repository;
+
+    public int PageSize = 4;
+
+    public HomeController(IStoreRepository repository,ILogger<HomeController> logger)
     {
+        _repository = repository;
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(int productPage = 1)
     {
-        return View();
+        _logger.LogInformation("Hello");
+        //return View(_repository.Products
+        //        .OrderBy(p => p.ProductId)
+        //        .Skip((productPage-1) * PageSize)
+        //        .Take(PageSize));
+
+        return View(new ProductsListViewModels
+        {
+            Products = _repository.Products
+                .OrderBy(p => p.ProductId)
+                .Skip((productPage - 1)*PageSize)
+                .Take(PageSize),
+            PagingInfo = new PagingInfo
+            {
+                CurrentPage = productPage,
+                ItemsPerPage = PageSize,
+                TotalItems = _repository.Products.Count()
+
+            }
+        });
     }
 
-    public IActionResult Privacy()
+    public IActionResult Catalog(int productPage = 1)
     {
-        return View();
+        return View(new ProductsListViewModels
+        {
+            Products = _repository.Products
+                .OrderBy(p => p.ProductId)
+                .Skip((productPage-1)*PageSize)
+                .Take(PageSize),
+            PagingInfo = new PagingInfo
+            {
+                CurrentPage = productPage,
+                ItemsPerPage = PageSize,
+                TotalItems = _repository.Products.Count()
+            }
+        });
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

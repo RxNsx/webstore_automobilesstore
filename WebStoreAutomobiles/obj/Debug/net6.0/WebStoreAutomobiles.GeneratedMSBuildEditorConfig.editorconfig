@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\alpen\Source\Repos\RxNsx\webstore_automobilesstore\WebStoreAutomobiles
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/alpen/Source/Repos/RxNsx/webstore_automobilesstore/WebStoreAutomobiles/Views/Home/Catalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRhbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alpen/Source/Repos/RxNsx/webstore_automobilesstore/WebStoreAutomobiles/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

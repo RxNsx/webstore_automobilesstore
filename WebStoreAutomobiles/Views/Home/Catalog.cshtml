@@ -1,0 +1,16 @@
+﻿@model ProductsListViewModels
+
+@foreach(Product p in Model.Products)
+{
+    <div>
+        <div>Name: @p.Name</div>
+        <div>Description: @p.Description</div>
+        <div>Price: @p.Price.ToString("c")</div>
+        <div>Category: @p.Category</div>
+    </div>
+}
+
+<div page-model="@Model.PagingInfo" page-action="Catalog" page-classes-enabled="true"
+    page-class="btn" page-class-normal="btn-outline-dark w-20"
+    page-class-selected="btn-primary w-20" class="group pull-right m-1">
+</div>

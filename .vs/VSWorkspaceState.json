@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WebStoreAutomobiles",
+    "\\WebStoreAutomobiles\\Models",
+    "\\WebStoreAutomobiles\\Views"
   ],
   "SelectedNode": "\\webstore_automobilesstore.sln",
   "PreviewInSolutionExplorer": false

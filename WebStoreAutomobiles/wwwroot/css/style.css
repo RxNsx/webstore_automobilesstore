@@ -43,7 +43,7 @@ header>a{
 }
 
 .btn{
-  width: 200px;
+  width: 100px;
 }
 
 .btn.btn-primary {
@@ -52,6 +52,10 @@ header>a{
 
 .btn.btn-secondary {
   background-color: #A2DBFA;
+}
+
+.nav-btn {
+    width: 15px
 }
 
 
