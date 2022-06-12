@@ -19,28 +19,9 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index(int productPage = 1)
+    public IActionResult Index()
     {
-        _logger.LogInformation("Hello");
-        //return View(_repository.Products
-        //        .OrderBy(p => p.ProductId)
-        //        .Skip((productPage-1) * PageSize)
-        //        .Take(PageSize));
-
-        return View(new ProductsListViewModels
-        {
-            Products = _repository.Products
-                .OrderBy(p => p.ProductId)
-                .Skip((productPage - 1)*PageSize)
-                .Take(PageSize),
-            PagingInfo = new PagingInfo
-            {
-                CurrentPage = productPage,
-                ItemsPerPage = PageSize,
-                TotalItems = _repository.Products.Count()
-
-            }
-        });
+        return View();
     }
 
     public IActionResult Catalog(int productPage = 1)
@@ -58,6 +39,11 @@ public class HomeController : Controller
                 TotalItems = _repository.Products.Count()
             }
         });
+    }
+
+    public IActionResult Contacts()
+    {
+        return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

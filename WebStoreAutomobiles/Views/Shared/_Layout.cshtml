@@ -16,13 +16,13 @@
             </div>
             <div class="header-pages-link">
                 <div class="btn btn-primary text-dark">
-                    <p>Главная</p>
+                    <a asp-controller="Home" asp-action="Index">Главная</a>
                 </div>
                 <div class="btn btn-secondary text-dark">
                     <a asp-controller="Home" asp-action="Catalog">Каталог</a>
                 </div>
                 <div class="btn btn-secondary text-dark">
-                    <p><a href="#">Контакты</a></p>
+                    <a asp-controller="Home" asp-action="Contacts">Контакты</a>
                 </div>
             </div>
             <div class="cart">
@@ -30,8 +30,7 @@
             </div>
         </div>
     </header>
-    <div class="main_content p-3 m-3">
-        <h3 class="text-center">Добро пожаловать</h3>
+    <div class="main-content p-2">
         <div class="col-12">
             @RenderBody()
         </div>

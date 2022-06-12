@@ -1,18 +1,23 @@
 ﻿@model ProductsListViewModels
 
-@foreach(Product p in Model.Products)
-{
-@*    <div>
-        <div>Name: @p.Name</div>
-        <div>Description: @p.Description</div>
-        <div>Price: @p.Price.ToString("c")</div>
-        <div>Category: @p.Category</div>
-    </div>*@
+<div class="row">
+    <div class="navigation col-2">
+        Navigation Buttons
+    </div>
+    <div class="product-cards col-10">
+        @foreach(Product p in Model.Products)
+        {
+            <partial name="ProductSummary" model="p"/>
+        }
 
-    <partial name="ProductSummary" model="p"/>
-}
+        <div page-model="@Model.PagingInfo" page-action="Catalog"
+            page-classes-enabled="true"
+            page-class="btn" page-class-normal="btn btn-secondary" page-class-selected="btn btn-primary">
+        </div>
+    </div>
+</div>
 
-<div page-model="@Model.PagingInfo" page-action="Catalog" page-classes-enabled="true"
-    page-class="btn" page-class-normal="btn btn-secondary" page-class-selected="btn btn-primary"></div>
+
+
 
 @*class="group pull-right m-1" aria-label="Page Navigation"*@

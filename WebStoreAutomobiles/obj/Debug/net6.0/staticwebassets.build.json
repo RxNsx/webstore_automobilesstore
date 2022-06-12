@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IUodEt7sLrAXRE/VvZA4/RtBLnuM7w+hih3JurSfAhI=",
+  "Hash": "YdEYnTqpkv4KVk9lghwO5/z2tkjgW9qgWI3tCPfmKlo=",
   "Source": "WebStoreAutomobiles",
   "BasePath": "_content/WebStoreAutomobiles",
   "Mode": "Default",
@@ -100,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\alpen\\Source\\Repos\\RxNsx\\webstore_automobilesstore\\WebStoreAutomobiles\\wwwroot\\index.html",
-      "SourceId": "WebStoreAutomobiles",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alpen\\Source\\Repos\\RxNsx\\webstore_automobilesstore\\WebStoreAutomobiles\\wwwroot\\",
-      "BasePath": "_content/WebStoreAutomobiles",
-      "RelativePath": "index.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
       "Identity": "C:\\Users\\alpen\\Source\\Repos\\RxNsx\\webstore_automobilesstore\\WebStoreAutomobiles\\wwwroot\\js\\site.js",
